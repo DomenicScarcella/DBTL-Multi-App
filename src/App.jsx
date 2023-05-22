@@ -7,14 +7,15 @@ export function App() {
     <div>
       <div className="header">
         <h1>#DontBuryTheLead</h1>
-        <h1>SPECIAL:</h1>
+        <h1>RECAP:</h1>
       </div>
       <div className="modular">
-        {/* <BracketModular /> */}
-        <ListModular />
+        {/* <BracketModular />
+        <ListModular /> */}
+        <div id="null" />
       </div>
       <div className="footer">
-        <h1>Who Would Win a Real Fight?</h1>
+        <h1>WWE Night of Champions - May 27, 2023</h1>
       </div>
     </div>
   )
