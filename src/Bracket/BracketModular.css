@@ -1,0 +1,228 @@
+.bracket-init {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+}
+
+#top-brackets {
+    width: 68vw;
+    height: 15vh;
+    position: absolute;
+    top: 7.5vh;
+    border-left: .5vw solid #7f7f7f;
+    border-right: .5vw solid #7f7f7f;
+}
+
+#bottom-brackets {
+    width: 68vw;
+    height: 15vh;
+    position: absolute;
+    top: 37.5vh;
+    border-left: .5vw solid #7f7f7f;
+    border-right: .5vw solid #7f7f7f;
+}
+
+#mid-brackets {
+    width: 53vw;
+    height: 30vh;
+    position: absolute;
+    top: 15vh;
+    border-left: .5vw solid #7f7f7f;
+    border-right: .5vw solid #7f7f7f;
+}
+
+#final-brackets {
+    width: 38vw;
+    height: 22.25vh;
+    position: absolute;
+    top: 30vh;
+    border-left: .5vw solid #7f7f7f;
+    border-right: .5vw solid #7f7f7f;
+    border-bottom: .5vw solid #7f7f7f;
+    border-radius: 0 0 2vw 2vw;
+}
+
+.featured-wrestler {
+    width: 49vw;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-image {
+    width: auto;
+    height: auto;
+    max-width: 39vw;
+    max-height: 46vh;
+    position: absolute;
+    bottom: 13.5vh;
+    margin-left: 0.75vw;
+}
+
+#wwelogo {
+    margin-left: 0;
+}
+
+#wrestler {
+    cursor: pointer;
+    z-index: 2;
+}
+
+.single-col {
+    width: 7.5vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col-name {
+    width: 15vw;
+    height: auto;
+    color: #000000;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+    font-size: 2.5vh;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: .1vh;
+    margin-top: 1vh;
+    margin-bottom: -3.5vh;
+}
+
+.LOpeners {
+    text-align: left;
+}
+
+.LSemifinals {
+    text-align: center;
+}
+
+.LFinals {
+    text-align: right;
+}
+
+.ROpeners {
+    text-align: right;
+    margin-left: -7.5vw;
+}
+
+.RSemifinals {
+    text-align: center;
+    margin-left: -7.5vw;
+}
+
+.RFinals {
+    text-align: left;
+    margin-left: -7.5vw;
+}
+
+#no-show {
+    visibility: hidden;
+}
+
+.col-item {
+    width: 15vw;
+    height: auto;
+    min-height: 5vh;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    font-weight: 600;
+    background-color: #7f7f7f;
+    padding: auto 1vw;
+    margin: auto;
+    border: .25vw solid #000000;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.champ-item {
+    width: 36vw;
+    height: auto;
+    min-height: 11.5vh;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 5.5vh;
+    font-weight: 600;
+    background-color: #7f7f7f;
+    position: absolute;
+    top: 46.5vh;
+    padding: auto 1vw;
+    margin: auto;
+    border: .25vw solid #000000;
+    border-radius: 3.5vw;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.hide {
+    color: #7f7f7f;
+    font-size: 1vh;
+}
+
+.unhide {
+    color: #000000;
+    background-color: #eff7ff;
+}
+
+.L {
+    border-color: #bfbfbf #bfbfbf #3f3f3f #3f3f3f;
+    border-radius: 0 3vw 3vw 0;
+}
+
+.L:active {
+    border-color: #3f3f3f #3f3f3f #bfbfbf #bfbfbf;
+}
+
+.R {
+    border-color: #bfbfbf #3f3f3f #3f3f3f #bfbfbf;
+    border-radius: 3vw 0 0 3vw;
+    margin-left: -7.5vw;
+
+}
+
+.R:active {
+    border-color: #3f3f3f #bfbfbf #bfbfbf #3f3f3f;
+}
+
+.C {
+    border-color: #bfbfbf #7f7f7f #3f3f3f #7f7f7f;
+}
+
+.C:active {
+    border-color: #3f3f3f #7f7f7f #bfbfbf #7f7f7f;
+}
+
+#now-L {
+    width: 18vw;
+    min-height: 6vh;
+    color: #8f0000;
+    font-size: 3vh;
+    background-color: #ffffDf;
+    text-shadow: -.075vh .125vh #000000;
+}
+
+#now-R {
+    width: 18vw;
+    min-height: 6vh;
+    color: #8f0000;
+    font-size: 3vh;
+    background-color: #ffffdf;
+    text-shadow: .075vh .125vh #000000;
+    margin-left: -10.5vw;
+}
+
+#now-C {
+    width: 36vw;
+    min-height: 12vh;
+    color: #8f0000;
+    font-size: 5.5vh;
+    background-color: #ffffdf;
+    text-shadow: 0 .1875vh .125vh #000000;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}

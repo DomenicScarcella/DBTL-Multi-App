@@ -1,0 +1,101 @@
+body {
+    background-color: #00274f;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 18.5vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1.5vh;
+    margin: 0;
+}
+
+.header h1 {
+    color: #dfdfdf;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+    font-size: 8vh;
+    font-weight: 500;
+    line-height: 105%;
+    letter-spacing: 0.25vh;
+    text-shadow:
+    0.25vh 0.25vh #000000,
+    0.25vh 0 #000000,
+    0.25vh -0.25vh #000000,
+    -0.25vh 0.25vh #000000,
+    -0.25vh 0 #000000,
+    -0.25vh -0.25vh #000000,
+    0 0.25vh #000000,
+    0 -0.25vh #000000,
+    0.5vh 0.5vh #7f0000,
+    0.5vh 0 #7f0000,
+    0.5vh -0.5vh #7f0000,
+    -0.5vh 0.5vh #7f0000,
+    -0.5vh 0 #7f0000,
+    -0.5vh -0.5vh #7f0000,
+    0 0.5vh #7f0000,
+    0 -0.5vh #7f0000;
+    margin: 0;
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    height: 18.5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 81.5vh;
+}
+
+.footer h1 {
+    color: #dfdfdf;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow bold', sans-serif;
+    font-size: 8vh;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 105%;
+    letter-spacing: 0.25vh;
+    text-shadow:
+    0.275vh 0.275vh #000000,
+    0.275vh 0 #000000,
+    0.275vh -0.275vh #000000,
+    -0.275vh 0.275vh #000000,
+    -0.275vh 0 #000000,
+    -0.275vh -0.275vh #000000,
+    0 0.275vh #000000,
+    0 -0.275vh #000000,
+    0.55vh 0.55vh #7f0000,
+    0.55vh 0 #7f0000,
+    0.55vh -0.55vh #7f0000,
+    -0.55vh 0.55vh #7f0000,
+    -0.55vh 0 #7f0000,
+    -0.55vh -0.55vh #7f0000,
+    0 0.55vh #7f0000,
+    0 -0.55vh #7f0000;
+    margin: 0;
+    padding-left: 1.5vw;
+}
+
+.navblock {
+    width: 30vw;
+    height: auto;
+    padding-right: 1.5vw;
+}
+
+.modular {
+    width: 97vw;
+    height: 60vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 20vh;
+    left: 1.5vw;
+    border-radius: 2vw;
+    justify-content: space-around;
+}
