@@ -7,7 +7,7 @@ export function App() {
     <div>
       <div className="header">
         <h1>#DontBuryTheLead</h1>
-        <h1>RECAP:</h1>
+        <h1>RECAP</h1>
       </div>
       <div className="modular">
         {/* <BracketModular />
@@ -15,7 +15,7 @@ export function App() {
         <div id="null" />
       </div>
       <div className="footer">
-        <h1>WWE Night of Champions - May 27, 2023</h1>
+        <h1>WWE SmackDown - June 2, 2023</h1>
       </div>
     </div>
   )
