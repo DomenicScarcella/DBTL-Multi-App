@@ -1,7 +1,7 @@
-import { BracketModular } from "./Bracket/BracketModular";
+// import { BracketModular } from "./Bracket/BracketModular";
 import { CarouselFooter } from "./Carousels/CarouselFooter";
 import { CarouselHeader } from "./Carousels/CarouselHeader";
-import { ListModular } from "./List/ListModular";
+// import { ListModular } from "./List/ListModular";
 import "./App.css";
 
 export function App() {

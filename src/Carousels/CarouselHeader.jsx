@@ -16,11 +16,11 @@ export function CarouselHeader() {
 
     return (
         <div className="carousel">
-            <button className="car-btn" onClick={handlePrev}>
+            <button className="carouselButton" onClick={handlePrev}>
                 <br />{index <= 0 ? headTypes[len - 1] : headTypes[index - 1]}<br /><br /> {`<<<`} 
             </button>
             {headTypes[index]}
-            <button  className="car-btn" onClick={handleNext}>
+            <button  className="carouselButton" onClick={handleNext}>
                 <br />{index >= len - 1 ? headTypes[0] : headTypes[index + 1]}<br /><br /> {`>>>`}
             </button>
         </div>
