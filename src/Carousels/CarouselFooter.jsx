@@ -24,14 +24,6 @@ export function CarouselFooter() {
         setEdit(false);
     }
 
-    function Foot() {
-        return (
-            oneLine
-            ? <>{inputs.title} - {inputs.date}</>
-            : <>{inputs.title}<br />{inputs.date}</>
-        )
-    }
-
     return (
         <div >
             {
@@ -41,7 +33,11 @@ export function CarouselFooter() {
                     onDoubleClick={ () => { setEdit(true) }}
                     onClick={ () => { setOneLine(!oneLine) }}
                 >
-                    {Foot()}
+                    {
+                        oneLine
+                        ? <>{inputs.title} - {inputs.date}</>
+                        : <>{inputs.title}<br />{inputs.date}</>
+                    }
                 </span>
                 : <form>
                     <label className="footerLabel"> Title:  
@@ -53,9 +49,9 @@ export function CarouselFooter() {
                         onChange={handleChange}
                         onKeyDown={(event) => {
                             if (event.key === "Enter") {
-                                setEdit(false);
-                                event.preventDefault();
-                                event.stopPropagation();
+                                handleSubmit();
+                            } else if (event.key === "Escape") {
+                                handleCancel();
                             }
                         }}
                     />
@@ -67,12 +63,32 @@ export function CarouselFooter() {
                         name="date"
                         value={newInputs.date || ""}
                         onChange={handleChange}
+                        onKeyDown={(event) => {
+                            if (event.key === "Enter") {
+                                handleSubmit();
+                            } else if (event.key === "Escape") {
+                                handleCancel();
+                            }
+                        }}
                     />
                     </label>
-                    <button className="footerButton" style={{color: "darkblue"}} type="submit" onClick={handleSubmit}>SUBMIT</button>
-                    <button className="footerButton" style={{color: "darkred"}} type="submit" onClick={handleCancel}>CANCEL</button>
+                    <button 
+                        className="footerButton"
+                        style={{color: "darkblue"}} 
+                        type="submit" 
+                        onClick={handleSubmit}
+                    >
+                        SUBMIT
+                    </button>
+                    <button 
+                        className="footerButton" 
+                        style={{color: "darkred"}} 
+                        type="submit" 
+                        onClick={handleCancel}
+                    >
+                        CANCEL
+                    </button>
                 </form>
-            
             }
         </div>
     )
