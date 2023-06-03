@@ -1,4 +1,6 @@
 import { BracketModular } from "./Bracket/BracketModular";
+import { CarouselFooter } from "./Carousels/CarouselFooter";
+import { CarouselHeader } from "./Carousels/CarouselHeader";
 import { ListModular } from "./List/ListModular";
 import "./App.css";
 
@@ -7,7 +9,9 @@ export function App() {
     <div>
       <div className="header">
         <h1>#DontBuryTheLead</h1>
-        <h1>RECAP</h1>
+        <h1>
+          <CarouselHeader />
+        </h1>
       </div>
       <div className="modular">
         {/* <BracketModular />
@@ -15,7 +19,7 @@ export function App() {
         <div id="null" />
       </div>
       <div className="footer">
-        <h1>WWE SmackDown - June 2, 2023</h1>
+        <h1><CarouselFooter /></h1>
       </div>
     </div>
   )

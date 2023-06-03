@@ -1,0 +1,19 @@
+.carousel {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.car-btn {
+    width: 4vw;
+    justify-content: center;
+    font-weight: bold;
+    display: none;
+}
+
+.carousel:hover .car-btn {
+    display: flex;
+    text-shadow: none;
+    cursor: pointer;
+}
