@@ -13,6 +13,11 @@ export function Modular() {
     return (
         <div className="modular">
             <div className="modular-selector">
+                <div style={{ textAlign: "center" }}>
+                    Select a<br />
+                    Modular<br />
+                    Component:
+                </div>
                 <div>
                     <input type="radio" value="nullbg" checked={modtype === "nullbg"} onChange={radioChange} />BLANK (default)
                 </div>
