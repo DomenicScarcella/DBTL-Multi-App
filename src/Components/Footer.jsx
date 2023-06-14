@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "./Carousels.css";
+import "./Components.css";
 
-export function CarouselFooter() {
+export function Footer() {
     const [oneLine, setOneLine] = useState(true);
     const [edit, setEdit] = useState(false);
-    const [inputs, setInputs] = useState({title: "WWE SmackDown", date: "June 9, 2023"});
+    const [inputs, setInputs] = useState({title: "Event's Title", date: "Event's Date"});
     const [newInputs, setNewInputs] = useState({...inputs});
 
     const handleChange = (event) => {

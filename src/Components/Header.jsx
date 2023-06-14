@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./Carousels.css";
+import "./Components.css";
 
-export function CarouselHeader() {
+export function Header() {
     const [index, setIndex] = useState(0);
     const headTypes = ["RECAP", "PREVIEW", "SPECIAL"];
     const len = headTypes.length;
