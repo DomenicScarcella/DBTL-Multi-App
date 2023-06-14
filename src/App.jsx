@@ -10,10 +10,7 @@ export function App() {
     <div>
 
       <div className="header">
-        <h1>#DontBuryTheLead</h1>
-        <h1>
-          <Header />
-        </h1>
+        <h1><Header /></h1>
       </div>
 
       <div className="modular">
