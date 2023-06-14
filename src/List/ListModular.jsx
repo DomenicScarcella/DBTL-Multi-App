@@ -31,13 +31,13 @@ export function ListModular() {
                                 key={L_R + i} 
                                 className={"list-item " + L_R + " " + item.vis + " " + L_R+i}
                                 onClick={() => {
-                                    if (item.vis == "hide") {
-                                        item.vis = "unhide";
+                                    if (item.vis == "hide-li") {
+                                        item.vis = "unhide-li";
                                         if (matchImage != item.pix) {
                                             newFeaturedMatch(item.pix, item.title)
                                         }
                                     } else {
-                                        item.vis = "hide";
+                                        item.vis = "hide-li";
                                         if (matchImage == item.pix) {
                                             clearFeaturedMatch()
                                         }
@@ -45,12 +45,12 @@ export function ListModular() {
                                     setLastClick(L_R + i + "_" + item.vis);
                                 }}
                                 id={
-                                    (active == item.title) && (item.vis == "unhide")
+                                    (active == item.title) && (item.vis == "unhide-li")
                                     ? "active-match-" + L_R
                                     : ""
                                 }
                             >
-                                {i}{ (item.vis == "hide") ? "" : ". " + item.title }
+                                {i}{ (item.vis == "hide-li") ? "" : ". " + item.title }
                             </button>
                         )
                     })

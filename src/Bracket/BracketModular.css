@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.featured-image {
+.featured-photo {
     width: auto;
     height: auto;
     max-width: 39vw;
@@ -159,12 +159,12 @@
     cursor: pointer;
 }
 
-.hide {
+.hide-br {
     color: #7f7f7f;
     font-size: 1vh;
 }
 
-.unhide {
+.unhide-br {
     color: #000000;
     background-color: #eff7ff;
 }

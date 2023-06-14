@@ -37,18 +37,18 @@ export function BracketModular() {
                                 key={round + i} 
                                 className={"col-item " + L_R + " " + item.see + " " + round+i}
                                 onClick={() => {
-                                    if (item.see == "hide") {
-                                        item.see = "unhide";
+                                    if (item.see == "hide-br") {
+                                        item.see = "unhide-br";
                                         if (photo != item.ph) { newFeaturedWrestler(item.ph, item.name) }
                                     } else {
-                                        item.see = "hide";
+                                        item.see = "hide-br";
                                         if (photo == item.ph) { clearFeaturedWrestler() }
                                     }
                                     setPrevClick(round + i + "_" + item.see);
                                 }}
                                 id={
                                     (String(now).valueOf() == String(item.name).valueOf())
-                                    && (item.see == "unhide")
+                                    && (item.see == "unhide-br")
                                     ? ((L_R == "L") ? "now-L" : "now-R")
                                     : ""
                                 }
@@ -66,7 +66,7 @@ export function BracketModular() {
         return (
             <div className={"featured-wrestler"}>
                 <img
-                    className={"featured-image " + prevClick} 
+                    className={"featured-photo " + prevClick} 
                     id={
                         (photo == wwelogo) ? "wwelogo" : "wrestler"
                     }
@@ -80,18 +80,18 @@ export function BracketModular() {
                 <button
                     className={"champ-item C " + champ.see + " C1"}
                     onClick={() => {
-                        if (champ.see == "hide") {
-                            champ.see = "unhide";
+                        if (champ.see == "hide-br") {
+                            champ.see = "unhide-br";
                             if (photo != champ.ph) { newFeaturedWrestler(champ.ph, champ.name) }
                         } else {
-                            champ.see = "hide";
+                            champ.see = "hide-br";
                             if (photo == champ.ph) { clearFeaturedWrestler() }
                         }
                         setPrevClick("C1_" + champ.see);
                     }}
                     id={
                         (String(now).valueOf() == String(champ.name).valueOf())
-                        && (champ.see == "unhide")
+                        && (champ.see == "unhide-br")
                         ? "now-C" : ""
                     }
                 >

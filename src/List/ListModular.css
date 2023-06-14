@@ -83,12 +83,12 @@ h2 {
     cursor: pointer;
 }
 
-.hide {
+.hide-li {
     color: #ffffff;
     font-size: 3.75vh;
 }
 
-.unhide {
+.unhide-li {
     color: #000000;
     background-color: #eff7ff;
 }
