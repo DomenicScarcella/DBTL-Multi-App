@@ -1,7 +1,9 @@
 .bracket-init {
     display: flex;
     flex-direction: row;
+    background-color: #ffffff;
     position: relative;
+    border-radius: 2vw;
     justify-content: space-around;
 }
 
