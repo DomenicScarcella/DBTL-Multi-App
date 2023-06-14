@@ -25,71 +25,73 @@ export function Footer() {
     }
 
     return (
-        <div >
-            {
-                !edit
-                ? <span
-                    style={{cursor: "pointer"}}
-                    onDoubleClick={ () => { setEdit(true) }}
-                    onClick={ () => { setOneLine(!oneLine) }}
-                >
-                    {
-                        oneLine
-                        ? <>{inputs.title} - {inputs.date}</>
-                        : <>{inputs.title}<br />{inputs.date}</>
-                    }
-                </span>
-                : <form>
-                    <label className="footerLabel"> Title:  
-                    <input 
-                        className="footerInput"
-                        type="text"
-                        name="title"
-                        value={newInputs.title || ""}
-                        onChange={handleChange}
-                        onKeyDown={(event) => {
-                            if (event.key === "Enter") {
-                                handleSubmit();
-                            } else if (event.key === "Escape") {
-                                handleCancel();
-                            }
-                        }}
-                    />
-                    </label>
-                    <label className="footerLabel"> Date:  
-                    <input
-                        className="footerInput"
-                        type="text"
-                        name="date"
-                        value={newInputs.date || ""}
-                        onChange={handleChange}
-                        onKeyDown={(event) => {
-                            if (event.key === "Enter") {
-                                handleSubmit();
-                            } else if (event.key === "Escape") {
-                                handleCancel();
-                            }
-                        }}
-                    />
-                    </label>
-                    <button 
-                        className="footerButton"
-                        style={{color: "darkblue"}} 
-                        type="submit" 
-                        onClick={handleSubmit}
+        <div className="footer">
+            <h1>
+                {
+                    !edit
+                    ? <span
+                        style={{cursor: "pointer"}}
+                        onDoubleClick={ () => { setEdit(true) }}
+                        onClick={ () => { setOneLine(!oneLine) }}
                     >
-                        SUBMIT
-                    </button>
-                    <button 
-                        className="footerButton" 
-                        style={{color: "darkred"}} 
-                        type="submit" 
-                        onClick={handleCancel}
-                    >
-                        CANCEL
-                    </button>
-                </form>
-            }
+                        {
+                            oneLine
+                            ? <>{inputs.title} - {inputs.date}</>
+                            : <>{inputs.title}<br />{inputs.date}</>
+                        }
+                    </span>
+                    : <form>
+                        <label className="footerLabel"> Title:  
+                        <input 
+                            className="footerInput"
+                            type="text"
+                            name="title"
+                            value={newInputs.title || ""}
+                            onChange={handleChange}
+                            onKeyDown={(event) => {
+                                if (event.key === "Enter") {
+                                    handleSubmit();
+                                } else if (event.key === "Escape") {
+                                    handleCancel();
+                                }
+                            }}
+                        />
+                        </label>
+                        <label className="footerLabel"> Date:  
+                        <input
+                            className="footerInput"
+                            type="text"
+                            name="date"
+                            value={newInputs.date || ""}
+                            onChange={handleChange}
+                            onKeyDown={(event) => {
+                                if (event.key === "Enter") {
+                                    handleSubmit();
+                                } else if (event.key === "Escape") {
+                                    handleCancel();
+                                }
+                            }}
+                        />
+                        </label>
+                        <button 
+                            className="footerButton"
+                            style={{color: "darkblue"}} 
+                            type="submit" 
+                            onClick={handleSubmit}
+                        >
+                            SUBMIT
+                        </button>
+                        <button 
+                            className="footerButton" 
+                            style={{color: "darkred"}} 
+                            type="submit" 
+                            onClick={handleCancel}
+                        >
+                            CANCEL
+                        </button>
+                    </form>
+                }
+            </h1>
         </div>
     )
 }

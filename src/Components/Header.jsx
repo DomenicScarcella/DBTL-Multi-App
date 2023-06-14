@@ -15,17 +15,17 @@ export function Header() {
     };
 
     return (
-        <>
-            <div>#DontBuryTheLead</div>
+        <div className="header">
+            <h1>#DontBuryTheLead</h1>
             <div className="carousel">
                 <button className="carouselButton" onClick={handlePrev}>
                     <br />{index <= 0 ? headTypes[len - 1] : headTypes[index - 1]}<br /><br /> {`<<<`} 
                 </button>
-                {headTypes[index]}
+                <h1>{headTypes[index]}</h1>
                 <button  className="carouselButton" onClick={handleNext}>
                     <br />{index >= len - 1 ? headTypes[0] : headTypes[index + 1]}<br /><br /> {`>>>`}
                 </button>
             </div>
-        </>
+        </div>
     )
 }
