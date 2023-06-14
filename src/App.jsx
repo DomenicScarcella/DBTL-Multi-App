@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer } from "./Components/Footer";
 import { Header } from "./Components/Header";
-import { BracketModular } from "./Bracket/BracketModular";
-import { ListModular } from "./List/ListModular";
+// import { BracketModular } from "./Bracket/BracketModular";
+// import { ListModular } from "./List/ListModular";
 import "./App.css";
 
 export function App() {
