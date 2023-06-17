@@ -1,12 +1,12 @@
 .header {
-    width: 40vw;
+    width: 42vw;
     height: 18.5vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: absolute;
     top: 1.5vh;
-    left: 30vw;
+    left: 29vw;
     margin: auto;
 }
 

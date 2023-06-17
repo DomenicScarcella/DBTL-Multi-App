@@ -16,7 +16,7 @@ export function Header() {
 
     return (
         <div className="header">
-            <h1>#DontBuryTheLead</h1>
+            <h1>Don't Bury The Lead</h1>
             <div className="carousel">
                 <button className="carouselButton" onClick={handlePrev}>
                     <br />{index <= 0 ? headTypes[len - 1] : headTypes[index - 1]}<br /><br /> {`<<<`} 
