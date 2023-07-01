@@ -1,12 +1,12 @@
 .header {
-    width: 42vw;
+    width: 80vw;
     height: 18.5vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     position: absolute;
     top: 1.5vh;
-    left: 29vw;
+    left: 10vw;
     margin: auto;
 }
 
@@ -16,7 +16,7 @@ h1 {
     font-size: 8vh;
     font-weight: 500;
     line-height: 105%;
-    letter-spacing: 0.25vh;
+    letter-spacing: .25vh;
     text-shadow:
     0.3vh 0.3vh #000000,
     0.3vh 0.2vh #000000,
@@ -94,11 +94,21 @@ h1 {
     position: relative;
 }
 
+/* #dbtl {
+    font-size: 8.8vh;
+    color: #ffdf00 ;
+    letter-spacing: 1vh;
+}
+
+#headtype {
+    font-size: 7.2vh;
+} */
+
 .carousel {
     width: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .carouselButton {
@@ -106,6 +116,7 @@ h1 {
     justify-content: center;
     font-weight: bold;
     display: none;
+    margin: 0.5vh 1.5vw;
 }
 
 .carousel:hover .carouselButton {
