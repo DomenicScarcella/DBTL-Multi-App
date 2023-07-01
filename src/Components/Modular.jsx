@@ -10,8 +10,8 @@ export function Modular() {
         setModtype(e.target.value);
     }
 
-    return (
-        <div className="modular">
+    function ModMenu() {
+        return (
             <div className="modular-selector">
                 <div style={{ textAlign: "center" }}>
                     Select a<br />
@@ -31,15 +31,25 @@ export function Modular() {
                     <input type="radio" value="list" checked={modtype === "list"} onChange={radioChange} />List Reveal
                 </div>
             </div>
-            {
-                (modtype === "whitebg")
-                    ? <div id="whitebg" />
-                    : (modtype === "bracket")
-                        ? <BracketModular />
-                        : (modtype === "list")
-                            ? <ListModular />
-                            : <div id="nullbg" />
-            }
+        )
+    }
+
+    function ModType() {
+        if (modtype === "whitebg") {
+            return (<div id="whitebg" />)
+        } else if (modtype === "bracket") {
+            return (<BracketModular />)
+        } else if (modtype === "list") {
+            return (<ListModular />)
+        } else {
+            return (<div id="nullbg" />)
+        }
+    }
+
+    return (
+        <div className="modular">
+            { ModMenu() }
+            { ModType() }
         </div>
     )
 }
