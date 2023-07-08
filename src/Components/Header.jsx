@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./Components.css";
 
 export function Header() {
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(1);
     const dbtl = "Don't Bury The Lead";
-    const headTypes = ["RECAP", "PREVIEW", "SPECIAL"];
+    const headTypes = ["\xa0\xa0\xa0\xa0\xa0\xa0", "RECAP", "PREVIEW", "SPECIAL"];
     const len = headTypes.length;
   
     const handlePrev = () => {
@@ -24,7 +24,7 @@ export function Header() {
                 <button className="carouselButton" onClick={handlePrev}>
                     <br />{index == 0 ? headTypes[len - 1] : headTypes[index - 1]}<br /><br /> {`<<<`} 
                 </button>
-                <h1 id="headtype">
+                <h1>
                     { headTypes[index] }
                 </h1>
                 <button  className="carouselButton" onClick={handleNext}>

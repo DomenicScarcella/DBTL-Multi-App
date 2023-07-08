@@ -14,7 +14,11 @@ export function Footer() {
     }
 
     const handleSubmit = (event) => {
-        setInputs({...newInputs});
+        if (newInputs.title == "") {
+            setInputs({title: "\xa0\xa0\xa0\xa0\xa0\xa0", date: newInputs.date})
+        } else {
+            setInputs({...newInputs});
+        }
         setEdit(false);
         event.preventDefault();
     }
