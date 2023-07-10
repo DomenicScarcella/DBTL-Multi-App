@@ -2,8 +2,9 @@ import { useState } from "react";
 import "./Components.css";
 
 export function Header() {
-    const [index, setIndex] = useState(1);
+    const [twoLines, setTwoLines] = useState(true)
     const dbtl = "Don't Bury The Lead";
+    const [index, setIndex] = useState(1);
     const headTypes = ["\xa0\xa0\xa0\xa0\xa0\xa0", "THE LEAD", "THE FOLLOW", "THUMB DRIVE", "CHEAP HEAT", "ITALIAN GOODBYE", "PREVIEW", "SPECIAL", "WATCH PARTY"];
     const len = headTypes.length;
   
@@ -17,20 +18,22 @@ export function Header() {
 
     return (
         <div className="header">
-            <h1>
-                { dbtl }
-            </h1>
-            <div className="carousel">
+            <h1 className="carousel">
                 <button className="carouselButton" onClick={handlePrev}>
                     <br />{index <= 0 ? headTypes[len - 1] : headTypes[index - 1]}<br /><br /> {`<<<`} 
                 </button>
-                <h1 id="goldText">
-                    { headTypes[index] }
-                </h1>
+                <span onClick={ () => { setTwoLines(!twoLines) }}>
+                    {
+                        twoLines
+                        ? <>{dbtl}<br /><span id="goldText">{headTypes[index]}</span></>
+                        : <>{dbtl} - <span id="goldText">{headTypes[index]}</span></>
+                    }
+                </span>
+
                 <button  className="carouselButton" onClick={handleNext}>
                     <br />{index >= len - 1 ? headTypes[0] : headTypes[index + 1]}<br /><br /> {`>>>`}
                 </button>
-            </div>
+            </h1>
         </div>
     )
 }
