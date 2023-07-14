@@ -5,7 +5,7 @@ export function Header() {
     const [twoLines, setTwoLines] = useState(true)
     const dbtl = "Don't Bury The Lead";
     const [index, setIndex] = useState(1);
-    const headTypes = ["\xa0\xa0\xa0\xa0\xa0\xa0", "THE LEAD", "THE FOLLOW", "THUMB DRIVE", "CHEAP HEAT", "ITALIAN GOODBYE", "PREVIEW", "SPECIAL", "WATCH PARTY"];
+    const headTypes = ["\xa0\xa0\xa0\xa0\xa0\xa0", "RECAP", "OPENING BELL", "THE LEAD", "THE FOLLOW", "THUMB DRIVE", "CHEAP HEAT", "ITALIAN GOODBYE", "PREVIEW", "SPECIAL", "WATCH PARTY"];
     const len = headTypes.length;
   
     const handlePrev = () => {
