@@ -3,11 +3,11 @@
     height: 18.5vh;
     display: flex;
     flex-direction: row;
-    text-align: center;
+    text-align: left;
     position: absolute;
     top: 1.5vh;
     left: 2vw;
-    justify-content: center;
+    justify-content: left;
     margin: auto;
     cursor: pointer;
 }
