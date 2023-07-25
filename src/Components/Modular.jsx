@@ -4,10 +4,10 @@ import { ListModular } from "../List/ListModular";
 import "./Components.css";
 
 export function Modular() {
-    const [modtype, setModtype] = useState("nullbg");
+    const [modType, setModType] = useState("nullbg");
 
-    const radioChange = (e) => {
-        setModtype(e.target.value);
+    const modTypeChange = (e) => {
+        setModType(e.target.value);
     }
 
     function ModMenu() {
@@ -19,27 +19,27 @@ export function Modular() {
                     Component:
                 </div>
                 <div>
-                    <input type="radio" value="nullbg" checked={modtype === "nullbg"} onChange={radioChange} />BLANK (default)
+                    <input type="radio" value="nullbg" checked={modType === "nullbg"} onChange={modTypeChange} />BLANK (default)
                 </div>
                 <div>
-                    <input type="radio" value="whitebg" checked={modtype === "whitebg"} onChange={radioChange} />Plain White
+                    <input type="radio" value="whitebg" checked={modType === "whitebg"} onChange={modTypeChange} />Plain White
                 </div>
                 <div>
-                    <input type="radio" value="bracket" checked={modtype === "bracket"} onChange={radioChange} />Bracket Reveal
+                    <input type="radio" value="bracket" checked={modType === "bracket"} onChange={modTypeChange} />Bracket Reveal
                 </div>
                 <div>
-                    <input type="radio" value="list" checked={modtype === "list"} onChange={radioChange} />List Reveal
+                    <input type="radio" value="list" checked={modType === "list"} onChange={modTypeChange} />List Reveal
                 </div>
             </div>
         )
     }
 
     function ModType() {
-        if (modtype === "whitebg") {
+        if (modType === "whitebg") {
             return (<div id="whitebg" />)
-        } else if (modtype === "bracket") {
+        } else if (modType === "bracket") {
             return (<BracketModular />)
-        } else if (modtype === "list") {
+        } else if (modType === "list") {
             return (<ListModular />)
         } else {
             return (<div id="nullbg" />)
