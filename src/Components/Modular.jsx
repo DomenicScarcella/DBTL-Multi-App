@@ -4,7 +4,7 @@ import { ListModular } from "../List/ListModular";
 import "./Components.css";
 
 export function Modular() {
-    const [modType, setModType] = useState("list");
+    const [modType, setModType] = useState("nullbg");
 
     const modTypeChange = (e) => {
         setModType(e.target.value);
