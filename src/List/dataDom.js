@@ -2,32 +2,28 @@ import * as mp from "./art/matchphotos/mp-index.js";
 
 const a = {title: "Roman Reigns (c) vs. Cody Rhodes",
                 pix: mp.ROMAN_CODY, vis: "hide-li"};
-const b = {title: "Austin Theory (c) vs. John Cena",
-                pix: mp.THEORY_CENA, vis: "hide-li"};
-const c = {title: "Seth Rollins vs. Logan Paul",
-                pix: mp.ROLLINS_PAUL, vis: "hide-li"};
-const d = {title: "Charlotte Flair (c) vs. Rhea Ripley",
-                pix: mp.CHARLOTTE_RHEA, vis: "hide-li"};
-const e = {title: "Bianca Belair (c) vs. Asuka",
-                pix: mp.BIANCA_ASUKA, vis: "hide-li"};
-const f = {title: "Becky Lynch, Lita & Trish Stratus vs. Damage CTRL",
-                pix: mp.SIX_WOMEN_TAG, vis: "hide-li"};
-const g = {title: "Brock Lesnar vs. Omos",
-                pix: mp.BROCK_OMOS, vis: "hide-li"};
-const h = {title: "Edge vs. Finn Bálor",
-                pix: mp.EDGE_FINN, vis: "hide-li"};
-const i = {title: "Gunther (c) vs. Drew McIntyre vs. Sheamus",
-                pix: mp.IC, vis: "hide-li"};
-const j = {title: "The Usos (c) vs. Sami Zayn & Kevin Owens",
-                pix: mp.USOS_SAMI_KO, vis: "hide-li"};
-const k = {title: "Rey Mysterio vs. Dominik Mysterio",
-                pix: mp.MYSTERIOS, vis: "hide-li"};
+const b = {title: "Roman Reigns & The Rock vs. Cody Rhodes & Seth Rollins",
+                pix: mp.TAG_RR_CR, vis: "hide-li"};
+const c = {title: "Seth Rollins (c) vs. Drew McIntyre",
+                pix: mp.ROLLINS_MCINTYRE, vis: "hide-li"};
+const d = {title: "Rhea Ripley (c) vs. Becky Lynch",
+                pix: mp.RHEA_BECKY, vis: "hide-li"};
+const e = {title: "Iyo Sky (c) vs. Bayley",
+                pix: mp.IYO_BAYLEY, vis: "hide-li"};
+const f = {title: "Logan Paul (c) vs. Kevin Owens vs. Randy Orton",
+                pix: mp.US_3, vis: "hide-li"};
+const g = {title: "Gunther (c) vs. Sami Zayn",
+                pix: mp.GUNTHER_SAMI, vis: "hide-li"};                
+const h = {title: "LA Knight vs. AJ Styles",
+                pix: mp.AJ_LA, vis: "hide-li"};
+const i = {title: "Jey Uso vs. Jimmy Uso",
+                pix: mp.USOS, vis: "hide-li"};
 
 const Rheader = {title: "Dom's List:"};
-const R1 = j;
-const R2 = d;
-const R3 = a;
-const R4 = i;
-const R5 = e;
+const R1 = a;
+const R2 = c;
+const R3 = e;
+const R4 = g;
+const R5 = i;
 
 export const listR = [Rheader, R1, R2, R3, R4, R5];
