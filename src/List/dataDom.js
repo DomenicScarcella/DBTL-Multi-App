@@ -24,10 +24,10 @@ const k = {title: "Bianca, Jade, Naomi vs. Damage CTRL",
                 pix: mp.WOMENS_TAG, vis: "hide-li"};
 
 const Rheader = {title: "Dom's List:"};
-const R1 = a;
-const R2 = c;
-const R3 = e;
-const R4 = k;
-const R5 = j;
+const R1 = g;
+const R2 = h;
+const R3 = a;
+const R4 = e;
+const R5 = d;
 
 export const listR = [Rheader, R1, R2, R3, R4, R5];
