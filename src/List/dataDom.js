@@ -18,12 +18,16 @@ const h = {title: "LA Knight vs. AJ Styles",
                 pix: mp.AJ_LA, vis: "hide-li"};
 const i = {title: "Jey Uso vs. Jimmy Uso",
                 pix: mp.USOS, vis: "hide-li"};
+const j = {title: "Men's Tag Team Championship Ladder Match",
+                pix: mp.LADDER, vis: "hide-li"};
+const k = {title: "Bianca, Jade, Naomi vs. Damage CTRL",
+                pix: mp.WOMENS_TAG, vis: "hide-li"};
 
 const Rheader = {title: "Dom's List:"};
 const R1 = a;
 const R2 = c;
 const R3 = e;
-const R4 = g;
-const R5 = i;
+const R4 = k;
+const R5 = j;
 
 export const listR = [Rheader, R1, R2, R3, R4, R5];

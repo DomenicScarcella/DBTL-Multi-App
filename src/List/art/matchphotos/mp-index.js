@@ -7,3 +7,5 @@ export { default as ROMAN_CODY } from "./ROMAN_CODY.jpg";
 export { default as TAG_RR_CR } from "./TAG_ROMAN-ROCK_CODY-ROLLINS.jpg";
 export { default as US_3 } from "./US_TRIPLE_PAUL_OWENS_ORTON.jpg";
 export { default as USOS } from "./USOS.jpg";
+export { default as LADDER } from "./MENS_TAG_LADDER.jpg";
+export { default as WOMENS_TAG } from "./6-WOMEN_TAG.jpg";
