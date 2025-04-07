@@ -1,11 +1,5 @@
-export { default as AJ_LA } from "./AJ_LA.jpg";
-export { default as GUNTHER_SAMI } from "./GUNTHER_SAMI.jpg";
-export { default as IYO_BAYLEY } from "./IYO_BAYLEY.jpg";
-export { default as RHEA_BECKY } from "./RHEA_BECKY.jpg";
-export { default as ROLLINS_MCINTYRE } from "./ROLLINS_MCINTYRE.jpg";
-export { default as ROMAN_CODY } from "./ROMAN_CODY.jpg";
-export { default as TAG_RR_CR } from "./TAG_ROMAN-ROCK_CODY-ROLLINS.jpg";
-export { default as US_3 } from "./US_TRIPLE_PAUL_OWENS_ORTON.jpg";
-export { default as USOS } from "./USOS.jpg";
-export { default as LADDER } from "./MENS_TAG_LADDER.jpg";
-export { default as WOMENS_TAG } from "./6-WOMEN_TAG.jpg";
+export { default as AJ_LOGAN } from "./AJ_LOGAN.jpg";
+export { default as CODY_CENA } from "./CODY_CENA.jpg";
+export { default as GUNTHER_JEY } from "./GUNTHER_JEY.jpg";
+export { default as LA_FATU } from "./LA_FATU.jpg";
+export { default as TIFF_CHAR } from "./TIFF_CHAR.jpg";
