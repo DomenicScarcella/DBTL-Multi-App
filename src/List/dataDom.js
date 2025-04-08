@@ -20,10 +20,10 @@ const i = {title: "Rey Mysterio vs. El Grande Americano",
     pix: mp.REY_GRANDE, vis: "hide-li"};
 
 const Rheader = {title: "Dom's List:"};
-const R1 = a;
-const R2 = b;
-const R3 = c;
-const R4 = d;
+const R1 = d;
+const R2 = f;
+const R3 = h;
+const R4 = i;
 const R5 = e;
 
 export const listR = [Rheader, R1, R2, R3, R4, R5];
