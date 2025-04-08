@@ -1,5 +1,9 @@
 export { default as AJ_LOGAN } from "./AJ_LOGAN.jpg";
 export { default as CODY_CENA } from "./CODY_CENA.jpg";
 export { default as GUNTHER_JEY } from "./GUNTHER_JEY.jpg";
+export { default as IC_4WAY } from "./IC_4WAY.jpg";
+export { default as IYO_RHEA_BIANCA } from "./IYO_RHEA_BIANCA.jpg";
+export { default as JADE_NAOMI } from "./JADE_NAOMI.jpg";
 export { default as LA_FATU } from "./LA_FATU.jpg";
+export { default as REY_GRANDE } from "./REY_GRANDE.jpg";
 export { default as TIFF_CHAR } from "./TIFF_CHAR.jpg";
