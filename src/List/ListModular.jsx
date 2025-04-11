@@ -19,6 +19,9 @@ export function ListModular() {
         setActive(title)
     }
 
+    // For Las Vegas WrestleMania 41
+    const cards = ["0", "Ace", "King", "Queen", "Jack", "10"];
+
     function ListSingle(arr, L_R) {
         return (
             <div className="single-list">
@@ -50,7 +53,10 @@ export function ListModular() {
                                     : ""
                                 }
                             >
-                                {i}{ (item.vis == "hide-li") ? "" : ". " + item.title }
+                                {/* {i}{ (item.vis == "hide-li") ? "" : ". " + item.title } */}
+
+                                {/* For Las Vegas WrestleMania 41 */}
+                                { (item.vis == "hide-li") ? cards[i] : i + ". " + item.title }
                             </button>
                         )
                     })
