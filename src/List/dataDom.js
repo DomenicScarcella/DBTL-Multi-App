@@ -21,26 +21,29 @@ const f = {title: "Bron Breakker (c) vs. Penta vs. Finn Bálor vs. Dominik Myste
 const g = {title: "War Raiders (c) vs. New Day",
     pix: mp.WR_ND, vis: "hide-li"};
 
-const h = {title: "Seth Rollins vs. Roman Reigns vs. CM Punk",
+const h = {title: "Liv Morgan & Raquel Rodriguez vs. Lyra Valkyria & Bayley",
+    pix: mp.LIVRAQ_BAYLYRA, vis: "hide-li"};
+
+const i = {title: "Seth Rollins vs. Roman Reigns vs. CM Punk",
     pix: mp.SR_RR_CMP, vis: "hide-li"};
 
-const i = {title: "AJ Styles vs. Logan Paul",
+const j = {title: "AJ Styles vs. Logan Paul",
     pix: mp.AJ_LOGAN, vis: "hide-li"};
 
-const j = {title: "Jade Cargill vs. Naomi",
+const k = {title: "Jade Cargill vs. Naomi",
     pix: mp.JADE_NAOMI, vis: "hide-li"};
 
-const k = {title: "Rey Mysterio vs. El Grande Americano",
+const l = {title: "Rey Mysterio vs. El Grande Americano",
     pix: mp.REY_GRANDE, vis: "hide-li"};
 
-const l = {title: "Damian Priest vs. Drew McIntyre",
+const m = {title: "Damian Priest vs. Drew McIntyre",
     pix: mp.DAMIEN_DREW, vis: "hide-li"};
 
 const Rheader = {title: "Dom's List:"};
 const R1 = e;
 const R2 = d;
 const R3 = a;
-const R4 = j;
-const R5 = h;
+const R4 = k;
+const R5 = i;
 
 export const listR = [Rheader, R1, R2, R3, R4, R5];
