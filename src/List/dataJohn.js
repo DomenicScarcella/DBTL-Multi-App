@@ -40,10 +40,10 @@ const m = {title: "Damian Priest vs. Drew McIntyre",
     pix: mp.DAMIEN_DREW, vis: "hide-li"};
 
 const Lheader = {title: "John's List:"};
-const L1 = f;
-const L2 = g;
-const L3 = j;
-const L4 = l;
-const L5 = m;
+const L1 = a;
+const L2 = b;
+const L3 = e;
+const L4 = d;
+const L5 = k;
 
 export const listL = [Lheader, L1, L2, L3, L4, L5];
